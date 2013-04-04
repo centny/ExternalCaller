@@ -1,6 +1,7 @@
 install:
 ./autogen.sh
 ./configure
+
 make
 
 
