@@ -14,7 +14,7 @@ void eextCaller() {
 }
 void killsig(int s) {
 	//sleep(2);
-	printf("receive kill signal:%d\n", s);
+	//printf("receive kill signal:%d\n", s);
 	ec->stop();
 }
 int main(int argc, char** argv) {
