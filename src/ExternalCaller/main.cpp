@@ -13,7 +13,7 @@ void eextCaller() {
 	cout << "ext end--------" << endl;
 }
 void killsig(int s) {
-	sleep(2);
+	//sleep(2);
 	printf("receive kill signal:%d\n", s);
 	ec->stop();
 }
