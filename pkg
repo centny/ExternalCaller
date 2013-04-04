@@ -1,0 +1,15 @@
+#!/bin/sh
+version=1.0.0
+name=ExternalCaller-$version
+tdir=/tmp/$name
+pdir=`pwd`
+if [ -d $tdir ];then
+ rm -rf $tdir
+fi
+mkdir $tdir
+rsync -av --exclude=".*" src/* $tdir
+cd /tmp
+zip -r $name.zip $name/*
+cd $pdir
+cp /tmp/$name.zip $1
+echo all end
